@@ -16,7 +16,7 @@ app.post('/tasks', (req, res) => {
   const title = (req.body.title || '').trim();
 
   if (!title) {
-    return res.status(400).json({ message: 'Task title is required' });
+    return res.status(404).json({ message: 'Task title is required' });
   }
 
   const task = { id: nextId++, title, done: false };
