@@ -1,0 +1,21 @@
+{
+  "name": "e2e-testing-demo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "test:unit": "jest tests",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui"
+  },
+  "dependencies": {
+    "chromium": "^3.0.3",
+    "express": "^4.19.2",
+    "playwright": "^1.63.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4"
+  }
+}
